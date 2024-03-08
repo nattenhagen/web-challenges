@@ -13,7 +13,8 @@ console.clear();
 const title = "title";
 const author = "author";
 const rating = 5;
-const numberSales = 4;
+let numberSales = 4;
+
 const Increaseby2 = numberSales + 1;
 const Increaseby4 = Increaseby2 + 1;
 
@@ -56,22 +57,12 @@ function logBookData() {
 
 logBookData();
 
-function logBookDataIncreaseby2() {
-  console.log(title);
-  console.log(author);
-  console.log(rating);
-  console.log(Increaseby2);
-}
+//numberSales = numberSales + 1;
+numberSales += 1;
+logBookData();
 
-logBookDataIncreaseby2();
+numberSales = numberSales + 1;
 
-function logBookDataIncreaseby4() {
-  console.log(title);
-  console.log(author);
-  console.log(rating);
-  console.log(Increaseby4);
-}
-
-logBookDataIncreaseby4();
+logBookData();
 
 // --^-- write your code here --^--
