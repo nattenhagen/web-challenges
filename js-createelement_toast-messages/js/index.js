@@ -7,9 +7,17 @@ const toastMessages = document.getElement(
   '[data-js="toast-container__message"]'
 );
 
-addButton.addEventListener("click", () => {
-  const newListElement = document.createElement("li");
+const newButton = document.createElement("button");
+document.body.append("button");
 
+newButton.textContent = "new toasti";
+
+addButton.addEventListener("click", () => {
+  const newButton = document.createElement("button");
+
+  newButton.textContent = "new toasti";
+
+  document.body.append("new toast message");
   // Exercise: Append a new entry to the toast messages container
 });
 
