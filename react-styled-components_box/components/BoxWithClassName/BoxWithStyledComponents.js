@@ -7,7 +7,6 @@ const StyledBox = styled.div`
   background-color: ${(props) => (props.$isBlack ? "black" : "green")};
   margin: 20px;
   display: inline-block;
-  display: flex;
 
   &:hover {
     background-color: ${(props) => (props.$isBlack ? "red" : "red")};
